@@ -1,0 +1,29 @@
+server:
+  port: 9600
+
+#logging:
+#level:
+#root: ${LOG_ROOT:INFO}
+
+
+# postgresql  database configurations
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/nex_gen_contacts_db
+    username: postgres
+    password: Divya@123
+    driver-class-name: org.postgresql.Driver
+
+    #jpa configurations+ hibernate configurations
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+swagger:
+  default-include-pattern: /api/.*
+  title: Nex Gen Contacts API
+  description: Nex Gen Contacts  API Documentation
+  version: 0.0.1
+
