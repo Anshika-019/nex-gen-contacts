@@ -14,6 +14,7 @@ public class PageController {
         model.addAttribute( "content", "Welcome to the home page of NexGen Contacts");
         model.addAttribute( "currentYear", 2024);
         return "home";
+
     }
 
 }
